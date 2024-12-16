@@ -6,7 +6,7 @@ const UsersList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('https://backend-zlx0.onrender.com/data')
+    axios.get('https://app-6jzy.onrender.com/data')
       .then(response => setUsers(response.data))
       .catch(error => console.error('Error fetching users:', error));
   }, []);
